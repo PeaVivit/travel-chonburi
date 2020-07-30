@@ -1,0 +1,13 @@
+p.center.red-text {
+    border: 1px solid limegreen;
+    margin: 30px 40px 0 20px;
+    padding: 1.6em;
+}
+
+.alert.alert-success {
+    margin-top: 20px;
+}
+
+.font-thai-itim {
+    font-family: 'Itim', cursive;
+}
