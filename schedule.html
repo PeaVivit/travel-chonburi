@@ -42,10 +42,13 @@
                         <i class="far fa-calendar-alt" style="color: lavender;"></i>
                     </h1>
                 </div>
+
+
+                
                 <div
-                    class="shadow-lg p-3 mb-5  rounded "
+                    class="shadow-lg p-3 mb-5 rounded responsive-table"
                     style="background-color: lavenderblush;">
-                    <table class="table table-bordered rounded">
+                    <table class="table table-bordered rounded responsive-table">
                         <thead>
                             <tr
                                 style="background-color:lightsteelblue"
@@ -590,7 +593,7 @@
                                         function myFunctionSaturday() {
                                             document
                                                 .getElementById("sat")
-                                                .innerHTML = "วันเสาร์ เวลา 16.30 - 19.30 Northern Thai Folk Music ";
+                                                .innerHTML = "วันเสาร์ เวลา 16.30 - 19.30 เรียน Northern Thai Folk Music ";
                                         }
                                     </script>
 
@@ -742,4 +745,19 @@
             crossorigin="anonymous"></script>
 
     </body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+    $('#dtVerticalScrollExample').DataTable({
+    "scrollY": "200px",
+    "scrollCollapse": true,
+    });
+    $('.dataTables_length').addClass('bs-select');
+    });
+</script>
+
 </html>

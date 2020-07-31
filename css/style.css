@@ -11,3 +11,29 @@ p.center.red-text {
 .font-thai-itim {
     font-family: 'Itim', cursive;
 }
+
+.responsive-video{
+    width: auto;
+    height: 20;
+}
+
+.responsive-table{
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -ms-overflow-style:
+    -ms-autohiding-scrollbar;
+}
+
+@media screen and (max-width: 800px) {
+    iframe{
+        width: fit-content;
+    }
+    #content{
+        flex-direction: column;
+    }
+    .container td:nth-child(4),
+    .container th:nth-child(4) { display: none; }
+}
+
+
